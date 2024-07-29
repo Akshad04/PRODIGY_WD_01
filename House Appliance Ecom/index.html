@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appliance Delight</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Appliance Delight</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" id="cart-button">Cart (0)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+    
+        <div class="home-section">
+            <div class="home-content">
+                <h2>Welcome to Our Home Appliances Shop!</h2>
+                <p>Discover top-quality appliances that make your home more comfortable and efficient. From cutting-edge kitchen gadgets to essential home equipment, we offer a wide range of products to meet your needs.</p>
+            </div>
+        </div>
+             
+        <section id="products" class="product-grid">
+            <div class="container">
+                <!-- Product Card 1 -->
+                <div class="product-card">
+                    <img src="images/refrigerator.jpg" alt="Refrigerator">
+                    <h2>Refrigerator</h2>
+                    <p>₹60,000</p> <!-- Price in Indian Rupees -->
+                    <div class="rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <button class="add-to-cart" data-product="Refrigerator" data-price="60000">Add to Cart</button>
+                    <button class="details-button" data-description="Features:<br>- High-quality refrigerator.<br>- Large capacity.<br>- Energy-saving features.<br>- Adjustable shelves.<br>Colours:<br>Available in Silver, Black, and White.<br>Estimated delivery:<br>7-10 days.">Details</button>
+                    <p class="product-details">
+                        Features:<br>
+                        - High-quality refrigerator.<br>
+                        - Large capacity.<br>
+                        - Energy-saving features.<br>
+                        - Adjustable shelves.<br>
+                        Colours:<br>
+                        Available in Silver, Black, and White.<br>
+                        Estimated delivery:<br>
+                        7-10 days.
+                    </p>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="product-card">
+                    <img src="images/washing_machine.jpg" alt="Washing Machine">
+                    <h2>Washing Machine</h2>
+                    <p>₹35,000</p> <!-- Price in Indian Rupees -->
+                    <div class="rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <button class="add-to-cart" data-product="Washing Machine" data-price="35000">Add to Cart</button>
+                    <button class="details-button" data-description="Features:<br>- Reliable washing machine.<br>- Multiple wash settings.<br>- Large drum capacity.<br>- Quick wash option.<br>Colours:<br>Available in White and Silver.<br>Estimated delivery:<br>5-7 days.">Details</button>
+                    <p class="product-details">
+                        Features:<br>
+                        - Reliable washing machine.<br>
+                        - Multiple wash settings.<br>
+                        - Large drum capacity.<br>
+                        - Quick wash option.<br>
+                        Colours:<br>
+                        Available in White and Silver.<br>
+                        Estimated delivery:<br>
+                        5-7 days.
+                    </p>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="product-card">
+                    <img src="images/microwave.jpg" alt="Microwave">
+                    <h2>Microwave</h2>
+                    <p>₹12,000</p> <!-- Price in Indian Rupees -->
+                    <div class="rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">☆</span>
+                    </div>
+                    <button class="add-to-cart" data-product="Microwave" data-price="12000">Add to Cart</button>
+                    <button class="details-button" data-description="Features:<br>- Compact microwave.<br>- Advanced features.<br>- Easy-to-use controls.<br>- Multiple cooking presets.<br>Colours:<br>Available in Black and Silver.<br>Estimated delivery:<br>3-5 days.">Details</button>
+                    <p class="product-details">
+                        Features:<br>
+                        - Compact microwave.<br>
+                        - Advanced features.<br>
+                        - Easy-to-use controls.<br>
+                        - Multiple cooking presets.<br>
+                        Colours:<br>
+                        Available in Black and Silver.<br>
+                        Estimated delivery:<br>
+                        3-5 days.
+                    </p>
+                </div>
+                <!-- Product Card 4 -->
+                <div class="product-card">
+                    <img src="images/television.jpg" alt="Television">
+                    <h2>Television</h2>
+                    <p>₹35,000</p> <!-- Price in Indian Rupees -->
+                    <div class="rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <button class="add-to-cart" data-product="Television" data-price="35000">Add to Cart</button>
+                    <button class="details-button" data-description="Features:<br>- 4K Ultra HD television.<br>- Vibrant colors.<br>- High-definition clarity.<br>- Smart features.<br>Colours:<br>Available in Black.<br>Estimated delivery:<br>7-10 days.">Details</button>
+                    <p class="product-details">
+                        Features:<br>
+                        - 4K Ultra HD television.<br>
+                        - Vibrant colors.<br>
+                        - High-definition clarity.<br>
+                        - Smart features.<br>
+                        Colours:<br>
+                        Available in Black.<br>
+                        Estimated delivery:<br>
+                        7-10 days.
+                    </p>
+                </div>
+                <!-- Product Card 5 -->
+                <div class="product-card">
+                    <img src="images/vacuum_cleaner.jpg" alt="Vacuum Cleaner">
+                    <h2>Vacuum Cleaner</h2>
+                    <p>₹9,000</p> <!-- Price in Indian Rupees -->
+                    <div class="rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">☆</span>
+                    </div>
+                    <button class="add-to-cart" data-product="Vacuum Cleaner" data-price="9000">Add to Cart</button>
+                    <button class="details-button" data-description="Features:<br>- Powerful vacuum cleaner.<br>- Multiple attachments.<br>- HEPA filter.<br>Colours:<br>Available in Red and Blue.<br>Estimated delivery:<br>5-7 days.">Details</button>
+                    <p class="product-details">
+                        Features:<br>
+                        - Powerful vacuum cleaner.<br>
+                        - Multiple attachments.<br>
+                        - HEPA filter.<br>
+                        Colours:<br>
+                        Available in Red and Blue.<br>
+                        Estimated delivery:<br>
+                        5-7 days.
+                    </p>
+                </div>
+                <!-- Product Card 6 -->
+                <div class="product-card">
+                    <img src="images/mixer_grinder.jpg" alt="Mixer Grinder">
+                    <h2>Mixer Grinder</h2>
+                    <p>₹4,000</p> <!-- Price in Indian Rupees -->
+                    <div class="rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <button class="add-to-cart" data-product="Mixer Grinder" data-price="4000">Add to Cart</button>
+                    <button class="details-button" data-description="Features:<br>- Versatile mixer grinder.<br>- Stainless steel blades.<br>- Multiple jars.<br>Colours:<br>Available in White and Red.<br>Estimated delivery:<br>3-5 days.">Details</button>
+                    <p class="product-details">
+                        Features:<br>
+                        - Versatile mixer grinder.<br>
+                        - Stainless steel blades.<br>
+                        - Multiple jars.<br>
+                        Colours:<br>
+                        Available in White and Red.<br>
+                        Estimated delivery:<br>
+                        3-5 days.
+                    </p>
+                </div>
+                <!-- Product Card 7 -->
+                <div class="product-card">
+                    <img src="images/iron.jpg" alt="Iron">
+                    <h2>Iron</h2>
+                    <p>₹1,200</p> <!-- Price in Indian Rupees -->
+                    <div class="rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">☆</span>
+                    </div>
+                    <button class="add-to-cart" data-product="Iron" data-price="1200">Add to Cart</button>
+                    <button class="details-button" data-description="Features:<br>- Efficient iron.<br>- Non-stick soleplate.<br>- Adjustable temperature settings.<br>Colours:<br>Available in Blue and White.<br>Estimated delivery:<br>3-5 days.">Details</button>
+                    <p class="product-details">
+                        Features:<br>
+                        - Efficient iron.<br>
+                        - Non-stick soleplate.<br>
+                        - Adjustable temperature settings.<br>
+                        Colours:<br>
+                        Available in Blue and White.<br>
+                        Estimated delivery:<br>
+                        3-5 days.
+                    </p>
+                </div>
+                <!-- Product Card 8 -->
+                <div class="product-card">
+                    <img src="images/induction_stove.jpg" alt="Induction Stove">
+                    <h2>Induction Stove</h2>
+                    <p>₹2,800</p> <!-- Price in Indian Rupees -->
+                    <div class="rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">☆</span>
+                    </div>
+                    <button class="add-to-cart" data-product="Induction Stove" data-price="2800">Add to Cart</button>
+                    <button class="details-button" data-description="Features:<br>- Energy-efficient induction stove.<br>- Touch controls.<br>- Multiple power settings.<br>Colours:<br>Available in Black.<br>Estimated delivery:<br>3-5 days.">Details</button>
+                    <p class="product-details">
+                        Features:<br>
+                        - Energy-efficient induction stove.<br>
+                        - Touch controls.<br>
+                        - Multiple power settings.<br>
+                        Colours:<br>
+                        Available in Black.<br>
+                        Estimated delivery:<br>
+                        3-5 days.
+                    </p>
+                </div>
+                <!-- Product Card 9 -->
+                <div class="product-card">
+                    <img src="images/coffee_maker.jpg" alt="Coffee Maker">
+                    <h2>Coffee Maker</h2>
+                    <p>₹3,500</p> <!-- Price in Indian Rupees -->
+                    <div class="rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">☆</span>
+                    </div>
+                    <button class="add-to-cart" data-product="Coffee Maker" data-price="3500">Add to Cart</button>
+                    <button class="details-button" data-description="Features:<br>- Stylish coffee maker.<br>- Brew strength control.<br>- Programmable settings.<br>Colours:<br>Available in Black and Silver.<br>Estimated delivery:<br>3-5 days.">Details</button>
+                    <p class="product-details">
+                        Features:<br>
+                        - Stylish coffee maker.<br>
+                        - Brew strength control.<br>
+                        - Programmable settings.<br>
+                        Colours:<br>
+                        Available in Black and Silver.<br>
+                        Estimated delivery:<br>
+                        3-5 days.
+                    </p>
+                </div>
+                <!-- Product Card 10 -->
+                <div class="product-card">
+                    <img src="images/chimney.jpg" alt="Chimney">
+                    <h2>Chimney</h2>
+                    <p>₹12,000</p> <!-- Price in Indian Rupees -->
+                    <div class="rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">☆</span>
+                    </div>
+                    <button class="add-to-cart" data-product="Chimney" data-price="12000">Add to Cart</button>
+                    <button class="details-button" data-description="Features:<br>- High-efficiency chimney.<br>- Auto-clean function.<br>- Powerful suction.<br>Colours:<br>Available in Black and Silver.<br>Estimated delivery:<br>5-7 days.">Details</button>
+                    <p class="product-details">
+                        Features:<br>
+                        - High-efficiency chimney.<br>
+                        - Auto-clean function.<br>
+                        - Powerful suction.<br>
+                        Colours:<br>
+                        Available in Black and Silver.<br>
+                        Estimated delivery:<br>
+                        5-7 days.
+                    </p>
+                </div>
+                <!-- Product Card 11 -->
+                <div class="product-card">
+                    <img src="images/toaster.jpg" alt="Toaster">
+                    <h2>Toaster</h2>
+                    <p>₹1,500</p> <!-- Price in Indian Rupees -->
+                    <div class="rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">☆</span>
+                    </div>
+                    <button class="add-to-cart" data-product="Toaster" data-price="1500">Add to Cart</button>
+                    <button class="details-button" data-description="Features:<br>- Efficient toaster.<br>- Multiple browning settings.<br>- Easy to clean.<br>Colours:<br>Available in White and Black.<br>Estimated delivery:<br>3-5 days.">Details</button>
+                    <p class="product-details">
+                        Features:<br>
+                        - Efficient toaster.<br>
+                        - Multiple browning settings.<br>
+                        - Easy to clean.<br>
+                        Colours:<br>
+                        Available in White and Black.<br>
+                        Estimated delivery:<br>
+                        3-5 days.
+                    </p>
+                </div>
+                <!-- Product Card 12 -->
+                <div class="product-card">
+                    <img src="images/air_conditioner.jpg" alt="Air Conditioner">
+                    <h2>Air Conditioner</h2>
+                    <p>₹25,000</p> <!-- Price in Indian Rupees -->
+                    <div class="rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <button class="add-to-cart" data-product="Air Conditioner" data-price="25000">Add to Cart</button>
+                    <button class="details-button" data-description="Features:<br>- Energy-efficient air conditioner.<br>- Fast cooling.<br>- Low noise.<br>Colours:<br>Available in White.<br>Estimated delivery:<br>7-10 days.">Details</button>
+                    <p class="product-details">
+                        Features:<br>
+                        - Energy-efficient air conditioner.<br>
+                        - Fast cooling.<br>
+                        - Low noise.<br>
+                        Colours:<br>
+                        Available in White.<br>
+                        Estimated delivery:<br>
+                        7-10 days.
+                    </p>
+                </div>
+                <!-- Product Card 13 -->
+                <div class="product-card">
+                    <img src="images/roti_maker.jpg" alt="Roti Maker">
+                    <h2>Roti Maker</h2>
+                    <p>₹2,000</p> <!-- Price in Indian Rupees -->
+                    <div class="rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">☆</span>
+                    </div>
+                    <button class="add-to-cart" data-product="Roti Maker" data-price="2000">Add to Cart</button>
+                    <button class="details-button" data-description="Features:<br>- Easy-to-use roti maker.<br>- Non-stick plates.<br>- Compact design.<br>Colours:<br>Available in Black.<br>Estimated delivery:<br>3-5 days.">Details</button>
+                    <p class="product-details">
+                        Features:<br>
+                        - Easy-to-use roti maker.<br>
+                        - Non-stick plates.<br>
+                        - Compact design.<br>
+                        Colours:<br>
+                        Available in Black.<br>
+                        Estimated delivery:<br>
+                        3-5 days.
+                    </p>
+                </div>
+                <!-- Product Card 14 -->
+                <div class="product-card">
+                    <img src="images/water_purifier.jpg" alt="Water Purifier">
+                    <h2>Water Purifier</h2>
+                    <p>₹10,000</p> <!-- Price in Indian Rupees -->
+                    <div class="rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">☆</span>
+                    </div>
+                    <button class="add-to-cart" data-product="Water Purifier" data-price="10000">Add to Cart</button>
+                    <button class="details-button" data-description="Features:<br>- Advanced water purifier.<br>- Multiple purification stages.<br>- Easy to install.<br>Colours:<br>Available in White and Blue.<br>Estimated delivery:<br>5-7 days.">Details</button>
+                    <p class="product-details">
+                        Features:<br>
+                        - Advanced water purifier.<br>
+                        - Multiple purification stages.<br>
+                        - Easy to install.<br>
+                        Colours:<br>
+                        Available in White and Blue.<br>
+                        Estimated delivery:<br>
+                        5-7 days.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Appliance Delight. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

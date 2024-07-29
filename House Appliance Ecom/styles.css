@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.home-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background-image: url('images/home_page.jpg'); /* Path to your background image */
+    background-size: cover; /* Ensure the image covers the section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Avoid repeating the image */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: flex-start; /* Align content to the start (left) */
+    color: #fff; /* White text color for contrast */
+    text-align: left; /* Align text to the left */
+    padding: 0 2rem; /* Add some padding on the sides */
+}
+
+.home-content {
+    max-width: 600px; /* Set a max width for the content */
+    position: absolute; /* Position content absolutely within home-section */
+    top: 50%; /* Center vertically in relation to home-section */
+    left: 2rem; /* Align to the far left of home-section with some padding */
+    transform: translateY(-50%); /* Adjust vertical positioning to truly center */
+}
+
+.home-content h2 {
+    font-size: 2.5rem; /* Adjust font size as needed */
+    margin-bottom: 1rem; /* Add spacing below the heading */
+}
+
+.home-content p {
+    font-size: 1.2rem; /* Adjust font size for the paragraph */
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allows the menu items to wrap if needed */
+}
+
+header nav ul li {
+    margin: 0.5rem; /* Reduced margin for smaller screens */
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: #ff0; /* Change to your desired active color */
+    background-color: #444; /* Optional: Add background color */
+}
+
+/* Product Grid Styles */
+.product-grid {
+    padding: 2rem 0;
+}
+
+.product-grid .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+/* Product Card Styles */
+.product-card {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better appearance */
+}
+
+/* Image Styles */
+.product-card img {
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Cover the area while maintaining aspect ratio */
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1rem;
+}
+
+/* Button Styles */
+.product-card button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin: 0.5rem 0;
+    border-radius: 3px; /* Optional: Rounded corners for buttons */
+}
+
+.product-card button:hover {
+    background-color: #555;
+}
+
+/* Product Details Styles */
+.product-details {
+    display: none;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 1rem;
+}
+
+.rating {
+    color: #FFD700; /* Gold color for stars */
+    font-size: 1.2em;
+}
+
+.rating .star {
+    display: inline-block;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .home-section {
+        padding: 0 1rem; /* Reduce padding for smaller screens */
+    }
+
+    .home-content {
+        left: 1rem; /* Reduce left padding for smaller screens */
+    }
+
+    .home-content h2 {
+        font-size: 2rem; /* Reduce heading font size */
+    }
+
+    .home-content p {
+        font-size: 1rem; /* Reduce paragraph font size */
+    }
+
+    header .container {
+        flex-direction: column; /* Stack header items vertically on smaller screens */
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 0.5rem 0; /* Adjust spacing for vertical menu */
+    }
+
+    .product-card img {
+        height: 150px; /* Adjust image height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .home-section {
+        padding: 0 0.5rem; /* Further reduce padding for very small screens */
+    }
+
+    .home-content {
+        left: 0.5rem; /* Further reduce left padding for very small screens */
+    }
+
+    .home-content h2 {
+        font-size: 1.5rem; /* Further reduce heading font size */
+    }
+
+    .home-content p {
+        font-size: 0.9rem; /* Further reduce paragraph font size */
+    }
+
+    header .container {
+        padding: 0 1rem; /* Add padding for smaller screens */
+    }
+
+    header nav ul li a {
+        padding: 0.5rem;
+        font-size: 0.9rem; /* Smaller font size for mobile screens */
+    }
+
+    .product-card {
+        padding: 0.5rem; /* Reduce padding for smaller screens */
+    }
+
+    .product-card img {
+        height: 120px; /* Further reduce image height for very small screens */
+    }
+}
+
+
+
+
+
